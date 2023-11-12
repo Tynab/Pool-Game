@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{a6bd29e1-978c-4e4f-ac48-b758bcbc9eb8}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>main.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.11</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\images\ball_1.png" />
+    <Content Include="assets\images\ball_10.png" />
+    <Content Include="assets\images\ball_11.png" />
+    <Content Include="assets\images\ball_12.png" />
+    <Content Include="assets\images\ball_13.png" />
+    <Content Include="assets\images\ball_14.png" />
+    <Content Include="assets\images\ball_15.png" />
+    <Content Include="assets\images\ball_16.png" />
+    <Content Include="assets\images\ball_2.png" />
+    <Content Include="assets\images\ball_3.png" />
+    <Content Include="assets\images\ball_4.png" />
+    <Content Include="assets\images\ball_5.png" />
+    <Content Include="assets\images\ball_6.png" />
+    <Content Include="assets\images\ball_7.png" />
+    <Content Include="assets\images\ball_8.png" />
+    <Content Include="assets\images\ball_9.png" />
+    <Content Include="assets\images\cue.png" />
+    <Content Include="assets\images\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
+    <Folder Include="assets\images" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.11" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
