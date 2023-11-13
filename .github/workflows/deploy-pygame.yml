@@ -2,7 +2,7 @@ name: Build Pool Game with Pygbag
 on:
   push:
     branches:
-      - main
+      - ci
   workflow_dispatch:
 
 jobs:
@@ -18,11 +18,11 @@ jobs:
             python -m pip install pygbag
             echo "Successfully installed pygbag"
             echo "Attempting to build the game"
-            python -m pygbag --build $GITHUB_WORKSPACE/pool/main.py
+            python -m pygbag --build $GITHUB_WORKSPACE/main.py
             echo "Successfully build the game and complied to WebAssembly"
 
     - name : "Upload to GitHub pages branch deployment"
       uses: JamesIves/github-pages-deploy-action@4.2.1
       with:
         branch: deployment
-        folder: pool/build/web
+        folder: build/web
