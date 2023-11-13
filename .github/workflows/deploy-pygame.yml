@@ -22,7 +22,7 @@ jobs:
             echo "Successfully build the game and complied to WebAssembly"
 
     - name : "Upload to GitHub pages branch deployment"
-      uses: JamesIves/github-pages-deploy-action@4.2.5
+      uses: JamesIves/github-pages-deploy-action@4.2.4
       with:
         branch: deployment
         folder: pool/build/web
